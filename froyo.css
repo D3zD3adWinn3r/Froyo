@@ -1,0 +1,26 @@
+body {
+     background-image: url('https://images.squarespace-cdn.com/content/v1/54b88aa9e4b04c160a28f1a8/1421469804883-NB5WKVSF88RG9S3CXN1K/froyo+logo.png?format=750w');
+    background-repeat: no-repeat;  
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+h1 {
+    color: #ff6347; /* Tomato color */
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
