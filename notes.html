@@ -1,0 +1,32 @@
+//lines with ** in front are just explanations! everything else you should try and write the code below !
+
+const userString = prompt("What flavors would you like?", "strawberry, vanilla, chocolate, chocalate, strawberry")
+//.split() turns a sting into an array "strawberry, vanilla, chocolate, chocalate, strawberry" becomes [strawberry, vanilla, chocolate, chocalate, strawberry]. Now we can use loops or array methods
+const userArray = userString.split(",")
+const createObject = (arr)=>{
+    //create an variable named flavorObject. Set it equal to an empty object.
+    //create a for loop that starts at 0, goes until arr.length, and counts by 1s
+    //inside your for loop create a const variable named eachFlavor. seti it equal to arr[i].
+    //**What do you think eachFlavor will print to the console. console.log(eachFlavor). Were you right?<--delete this console when your done with it
+    //**right now the flavor object is empty, but once the for loop starts running, we want to populate it with keys and values.
+    //**eachFlavor will be the key, and the number of times we see that flavor will be the value
+    //**to achieve that, we can write flavorObject[eachFlavor] = 1
+    //**we start with one because even though we don't know how many times we are going to see eachFlavor, we *know* it's there at least once
+    //**now we have a problem.  
+    //**by itself, flavorObject[eachFlavor] = 1, will produce this object {strawberry:1, chocolate:1, vanilla:1} when we want our final object to look like this {strawberry:2, chocolate:2, vanilla:1}
+    //**so we need to tell our for loop to only set flavorObject[eachFlavor] = 1 **if** that key is brand new. **else** we should just increase what is already there, because that means we've seen it more than once.
+    //to check the keys in the object, create a const variable called currKeys. set it equal to Object.keys(flavorObject).
+    //**What do you think currKeys will print to the console. console.log(currKeys). Were you right?<--delete this console when your done with it
+    //**now we can check currKeys for eachFlavors with this --> currKeys.includes(eachFlavor)
+    //write an if else statement in the if condition, write the code to check currKeys for eachFlavor
+    //in the if code block (if the key IS there, so we want to increase what is there already) set flavorObject[eachFlavor] = to itself +1
+    //in the else code block (else the key IS NOT there, so we want to create it and set it equal to 1) set flavorObject[eachFlavor] = 1
+    //**What do you think flavorObject will print to the console ON EACH FOR LOOP. console.log(eachFlavor) INSIDE the for loop. Were you right?<--delete this console when your done with it
+    //**What do you think flavorObject will print to the console AFTER ALL THE FOR LOOPS. console.log(eachFlavor) OUTSIDE the for loop. Were you right?<--delete this console when your done with it
+    //outside the for loop (make sure you are outside of it's curly braces!) return the flavor object
+}
+
+
+//save this to a const variable, name it whatever you want. on the other side of the equal sign, call your function by writing it's name and adding parenthesis behind it. add in the userArray between the parenthesis--->> const finalAnwser = myFunction(the array)
+//alert that variable. 
+//check html!
